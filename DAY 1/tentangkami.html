@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+    <div class="top-bar">
+    <div class="top-bar-content">
+        <p>Selamat datang di Website SMAN 6 Banjarmasin</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/sman.6banjarmasin/?hl=en"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMAN 6 Banjarmasin | Elang Muda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="page-white"> 
+    <header style="height: auto; padding-bottom: 30px;">
+        <nav>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo SMAN 6" class="logo-img">
+                <div class="logo-text">
+                    <span class="main-title">SMA NEGERI 6</span>
+                    <span class="sub-title">BANJARMASIN</span>
+                </div>
+            </div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-list">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentangkami.html">Tentang Kami</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="login.php" class="btn-login">Login</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hero" style="margin-top: 50px;">
+            <h1>Tentang Kami</h1>
+        </div>
+    </header>
+
+    <main class="info-section">
+        <article style="text-align: left;">
+            <h2>Menyongsong Generasi Muda yang Cemerlang</h2>
+            <p>SMAN 6 Banjarmasin adalah institusi yang berkomitmen membentuk generasi muda unggul, berkarakter, dan berkontribusi positif bagi masyarakat. Kami bukan sekadar tempat belajar, tapi tempat impian dan bakat dipupuk menjadi kenyataan.</p>
+            
+            <h3 style="margin-top: 20px;">Sejarah & Latar Belakang</h3>
+            <p>Nama "Elang Muda" melambangkan ketajaman, keberanian, dan visi masa depan. Istilah "Tepi Barat" mencerminkan harapan kami menjadi pelopor perubahan di wilayah barat.</p>
+
+            <div class="cards" style="margin-top: 40px;">
+                <div class="card">
+                    <i class="fas fa-eye icon-pro"></i>
+                    <h3>Visi</h3>
+                    <p>Menjadi lembaga terkemuka dalam pengembangan generasi muda yang berkarakter, berprestasi, dan berdaya saing global.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-bullseye icon-pro"></i>
+                    <h3>Misi</h3>
+                    <ul style="text-align: left; font-size: 0.9rem; list-style: inside; color: #444;">
+                        <li>Pendidikan inklusif & potensi individu.</li>
+                        <li>Mendorong kreativitas & inovasi.</li>
+                        <li>Menanamkan nilai moral & kepemimpinan.</li>
+                        <li>Lingkungan belajar kondusif & inspiratif.</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SMAN 6 Banjarmasin. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css">
+    
+    <script>
+        NProgress.start();
+        window.onload = function() { NProgress.done(); };
+
+        // Logika Toggle Menu
+        const menuToggle = document.getElementById('mobile-menu');
+        const navList = document.querySelector('.nav-list');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

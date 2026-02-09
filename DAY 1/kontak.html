@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+    <div class="top-bar">
+    <div class="top-bar-content">
+        <p>Selamat datang di Website SMAN 6 Banjarmasin</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/sman.6banjarmasin/?hl=en"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+    </div>
+</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMAN 6 Banjarmasin | Elang Muda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<body class="page-white">
+    <header style="height: auto; padding-bottom: 30px;">
+        <nav>
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo SMAN 6" class="logo-img">
+                <div class="logo-text">
+                    <span class="main-title">SMA NEGERI 6</span>
+                    <span class="sub-title">BANJARMASIN</span>
+                </div>
+            </div>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <ul class="nav-list">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentangkami.html">Tentang Kami</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="login.php" class="btn-login">Login</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hero" style="margin-top: 50px;">
+            <h1>Kontak & Kolaborasi</h1>
+        </div>
+    </header>
+
+    <section class="info-section">
+        <h2>Mari Bergabung!</h2>
+        <p>Kami membuka pintu bagi siapa saja yang memiliki mimpi besar.</p>
+        
+        <div style="max-width: 600px; margin: 30px auto; padding: 30px; border: 2px dashed #004080; border-radius: 15px; background: #f9f9f9;">
+            <h3 style="color: #004080; margin-bottom: 15px;"><i class="fas fa-handshake"></i> Kolaborasi Kami:</h3>
+            <p style="margin-bottom: 10px;">• Pertukaran Pelajar Nasional/Internasional.</p>
+            <p style="margin-bottom: 10px;">• Kerjasama Industri & Kurikulum Kerja.</p>
+            <p style="margin-bottom: 10px;">• Seminar & Workshop bersama para Ahli.</p>
+        </div>
+
+        <div style="margin-top: 40px; line-height: 2;">
+            <p><i class="fas fa-map-marker-alt" style="color: #004080;"></i> <strong>Alamat:</strong> Banjarmasin, Kalimantan Selatan</p>
+            <p><i class="fas fa-envelope" style="color: #004080;"></i> <strong>Email:</strong> info@sman6-bjm.sch.id</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SMAN 6 Banjarmasin. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css">
+    
+    <script>
+        NProgress.start();
+        window.onload = function() { NProgress.done(); };
+
+        // Logika Toggle Menu Mobile
+        const menuToggle = document.getElementById('mobile-menu');
+        const navList = document.querySelector('.nav-list');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
