@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find c:/xampp/htdocs/tes123123123 -type f \\\\\\(-name *.html -o -name *.css -o -name *.js -o -name *.php \\\\\\))",
+      "Bash(find c:/xampp/htdocs/tes123123123 -maxdepth 2 -type d -iname *backup* -o -maxdepth 2 -type d -iname *bak*)",
+      "WebSearch",
+      "WebFetch(domain:www.figma.com)",
+      "WebFetch(domain:pin.it)"
+    ]
+  }
+}
